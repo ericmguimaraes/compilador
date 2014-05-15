@@ -1,7 +1,5 @@
 package main;
 
-import interpret.Interpreter;
-
 import java.io.FileReader;
 import java.io.PushbackReader;
 
@@ -21,15 +19,12 @@ public class Main {
             Parser parser = new Parser(lexer); 
             Start ast = parser.parse() ; 
   
-            /* Get our Interpreter going. */ 
-            Interpreter interp = new Interpreter () ; 
-            ast.apply(interp) ; 
          } 
          catch (Exception e) { 
             System.out.println (e) ; 
          } 
       } else { 
-         System.err.println("usage: java simpleAdder inputFile"); 
+         System.err.println("Passe um arquivo como parametro"); 
          System.exit(1); 
       } 
    } 

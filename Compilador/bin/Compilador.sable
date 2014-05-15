@@ -14,28 +14,21 @@
 Package org.sablecc.portugol; // package name
 
 Helpers
-  /**
-   * Pascal is a case-insensitive language. So, we'll use helpers
-   * to simplify our regular expressions. E.g. Instead of writing, 
-   * for instance, end = ('e' | 'E') ('n' | 'N') ('d' | 'D'), we 
-   * may write:  end = e n d, which takes less space is makes the 
-   * regular expression more readable.
-   */
-  a = 'a' | 'A' ; // this could also be written as ['a' + 'A']
-  b = 'b' | 'B' ; // but I prefer the old lex style
-  d = 'd' | 'D' ;
-  e = 'e' | 'E' ;
-  g = 'g' | 'g' ;
-  i = 'i' | 'I' ;
-  l = 'l' | 'L' ;
-  m = 'm' | 'M' ;
-  n = 'n' | 'N' ;
-  o = 'o' | 'O' ;
-  p = 'p' | 'P' ;
-  r = 'r' | 'R' ;
-  t = 't' | 'T' ;
-  v = 'v' | 'V' ;
-  w = 'w' | 'W' ;
+  a = 'a' ; // this could also be written as ['a' + 'A']
+  b = 'b' ; // but I prefer the old lex style
+  d = 'd' ;
+  e = 'e' ;
+  g = 'g' ;
+  i = 'i' ;
+  l = 'l' ;
+  m = 'm' ;
+  n = 'n' ;
+  o = 'o' ;
+  p = 'p' ;
+  r = 'r' ;
+  t = 't' ;
+  v = 'v' ;
+  w = 'w' ;
 
   l_curly_bracket = '{' ;
   r_curly_bracket = '}' ;    
@@ -49,7 +42,7 @@ Helpers
   tab = 9 ;
   cr = 13 ;
   lf = 10 ;
-  blank = ' ' ;
+  blank = ' ';
 
 Tokens
   // reserved words
