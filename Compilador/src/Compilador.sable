@@ -1,28 +1,9 @@
-/****************************************************************
- * Copyright (c) 2000, Fidel Viegas (viegasfh@hotmail.com).	*
- * All rights reserved.						*
- *								*
- * Please see the LICENSE file for license information.		*
- ****************************************************************/
-
-/****************************************************************
- * This is a grammar for a small subset of Pascal.              *
- * It was implemented as an illustration of how to write a      *
- * compiler in SableCC and Java. 				*	
- ****************************************************************/
  
-Package org.sablecc.pascal; // package name
+Package org.sablecc.portugol; // package name
 
 Helpers
-  /**
-   * Pascal is a case-insensitive language. So, we'll use helpers
-   * to simplify our regular expressions. E.g. Instead of writing, 
-   * for instance, end = ('e' | 'E') ('n' | 'N') ('d' | 'D'), we 
-   * may write:  end = e n d, which takes less space is makes the 
-   * regular expression more readable.
-   */
   a = 'a' | 'A' ; // this could also be written as ['a' + 'A']
-  b = 'b' | 'B' ; // but I prefer the old lex style
+  b = 'b' | 'B' ;
   d = 'd' | 'D' ;
   e = 'e' | 'E' ;
   g = 'g' | 'g' ;
